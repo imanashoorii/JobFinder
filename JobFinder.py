@@ -52,4 +52,4 @@ def monster():
         print(location.text.strip())
         print()
 
-
+monster()
