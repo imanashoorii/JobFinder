@@ -8,3 +8,8 @@ from bs4 import BeautifulSoup
 
 def home(request):
     return render(request, 'base.html')
+
+
+def search(request):
+    search = request.POST.get('search')
+
