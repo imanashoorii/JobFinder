@@ -32,19 +32,12 @@ def search(request):
         link = job_elem.find('a')['href']
         if None in (title, company, location, summary):
             continue
-        # print()
-        # print(title.text.strip())
-        # print(company.text.strip())
-        # print(location.text.strip())
-        # print(summary.text.strip())
-        # print(date.text.strip())
-        # print(f"Apply here: https://indeed.com{link}\n")
         final_title = title.text.strip()
         final_company = company.text.strip()
         final_location = location.text.strip()
         final_summary = summary.text.strip()
         final_date = date.text.strip()
-        final_link = f"Apply here: https://indeed.com{link}\n"
+        final_link = f"https://indeed.com{link}\n"
 
         final_posting.append((final_title, final_company, final_location, final_summary, final_date, final_link))
 
