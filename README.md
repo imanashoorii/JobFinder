@@ -16,3 +16,5 @@ and use this application to find your ideal job from indeed easily.
 - docker build -t python/jobfinder .
 - docker-compose --compatibility up -d
 
+Also add your machine or server ip address to ***ALLOWED_HOSTS*** in setting.py
+
