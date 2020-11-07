@@ -11,5 +11,5 @@ and use this application to find your ideal job from indeed easily.
 
 -----
 
-*** Use this app within Docker with Dockerfile and Compose file included in the project ***
+***You can use this app within Docker with Dockerfile and Compose file included in the project***
 
