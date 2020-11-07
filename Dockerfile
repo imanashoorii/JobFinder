@@ -10,10 +10,10 @@ RUN apt-get update \
 
 WORKDIR /usr/src/app
 
-COPY ./files/requirements.txt ./
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY ./files ./
+COPY . ./
 
 # For Django - replace given ip and port
 EXPOSE 8000
