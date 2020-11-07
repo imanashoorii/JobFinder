@@ -13,7 +13,7 @@ x-common-config:
 services:
 
   jobfinder:
-    image: python/JobFinder
+    image: python/jobfinder
     hostname: finder
     container_name: jobfinder
     ports:
