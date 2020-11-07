@@ -1,0 +1,21 @@
+version: '3.8'
+
+x-common-config:
+   &common-config
+   environment:
+     TZ: Asia/Tehran
+   logging:
+     driver: "json-file"
+     options:
+       max-size: "100m"
+       max-file: "10"
+
+services:
+
+  jobfinder:
+    image: python:3.8.6
+    hostname: finder
+    container_name: jobfinder
+    ports:
+      - "8000:8000"
+    << : *common-config
